@@ -118,6 +118,6 @@ Made with ❤️ by Dhanashri Patil
 
 📧 Email: patil.dhanashrik@gmail.com
 
-🔗 GitHub
+## 👩‍💻 Connect with Me
 
-🔗 LinkedIn
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/dhanashri-patil24/)
