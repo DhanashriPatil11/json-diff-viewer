@@ -120,4 +120,4 @@ Made with ❤️ by Dhanashri Patil
 
 ## 👩‍💻 Connect with Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/dhanashri-patil24/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/dhanashri-patil24/) : Dhanashri Patil
