@@ -112,6 +112,9 @@ export default tseslint.config({
   },
 })
 ```
+## 🚀 Live Demo
+
+🔗 [Click here to view the deployed app on Vercel](https://json-diff-viewer-omega.vercel.app/)
 
 🧑‍🎓 Author
 Made with ❤️ by Dhanashri Patil
