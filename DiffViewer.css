@@ -1,0 +1,45 @@
+.glow-box {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-dark {
+  box-shadow:
+    0 0 10px #8a2be2,
+    0 0 20px #ff00ff,
+    0 0 30px #00ffff;
+  animation: glowDarkAnim 2s infinite alternate;
+}
+
+.glow-light {
+  box-shadow:
+    0 0 8px #00bcd4,
+    0 0 16px #2196f3,
+    0 0 24px #4caf50;
+  animation: glowLightAnim 2s infinite alternate;
+}
+
+@keyframes glowDarkAnim {
+  0% {
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+  }
+  50% {
+    box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+  }
+}
+
+@keyframes glowLightAnim {
+  0% {
+    box-shadow: 0 0 10px #4caf50, 0 0 20px #2196f3;
+  }
+  50% {
+    box-shadow: 0 0 20px #00bcd4, 0 0 30px #4caf50;
+  }
+  100% {
+    box-shadow: 0 0 10px #2196f3, 0 0 20px #00bcd4;
+  }
+}

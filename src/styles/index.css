@@ -1,0 +1,132 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ✅ Improvement 1: Global box-sizing reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  /* ✅ Improvement 4: Center body content */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+/* ✅ Improvement 2: Better accessibility for buttons */
+button:focus {
+  outline: none;
+}
+button:focus-visible {
+  outline: 2px solid #646cff;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+
+  /* 🔧 Fix: Remove accidental dot from pseudo-elements */
+.container::before,
+.container::after,
+.diff-output::before,
+.diff-output::after {
+  content: none !important;
+  display: none !important;
+}
+.diff-output {
+  background-color: #f4f4f4;
+  color: #000;
+  padding: 1em;
+  border-radius: 10px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  max-width: 600px;
+  overflow-x: auto;
+}
+
+textarea:focus {
+  outline: 2px solid #7f00ff;
+  box-shadow: 0 0 5px 2px rgba(127, 0, 255, 0.5);
+}
+.glow-box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(270deg, #ff0080, #ff8c00, #40e0d0, #8a2be2, #ff0080);
+  background-size: 600% 600%;
+  animation: rainbow-glow 8s ease infinite;
+  border-radius: 14px;
+  filter: blur(8px);
+}
+
+@keyframes rainbow-glow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+}
